@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "StudentApp.API.proto";
+
+service checkPermissionService{
+	rpc checkPermission (checkPermissionRequest) returns (checkPermissionResponse);
+}
+
+message checkPermissionRequest{
+	string permission = 1;
+}
+
+message checkPermissionResponse{
+	bool isallowed = 1;
+}

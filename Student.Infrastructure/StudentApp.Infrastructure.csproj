@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+		<PackageReference Include="dapper" Version="2.0.78" />
+		<PackageReference Include="dapper.contrib" Version="2.0.78" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Student.Core\StudentApp.Core.csproj" />
+	</ItemGroup>
+</Project>
